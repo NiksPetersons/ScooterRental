@@ -23,5 +23,14 @@ namespace ScooterRental.Web.Controllers
             _dbService.Create(scooter);
             return Created("", scooter);
         }
+
+        [HttpDelete]
+        [Route("delete/{id}")]
+        public IActionResult DeleteScooter(int id)
+        {
+            var scooter = _dbService.GetById<Scooter>(id);
+            _dbService.Delete(scooter);
+            return Ok();
+        }
     }
 }
