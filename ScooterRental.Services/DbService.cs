@@ -43,5 +43,10 @@ namespace ScooterRental.Services
         {
             return _context.Set<T>().SingleOrDefault(x => x.Id == id);
         }
+
+        public IQueryable<T> Query<T>() where T : Entity
+        {
+            return _context.Set<T>().AsQueryable();
+        }
     }
 }

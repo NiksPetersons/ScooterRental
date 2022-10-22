@@ -21,4 +21,8 @@
     <ProjectReference Include="..\ScooterRental.Services\ScooterRental.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
 </Project>

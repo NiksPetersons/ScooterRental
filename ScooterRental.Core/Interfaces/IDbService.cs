@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace ScooterRental.Core.Interfaces
 {
@@ -9,5 +10,6 @@ namespace ScooterRental.Core.Interfaces
         void Update<T>(T entity) where T : Entity;
         List<T> GetAll<T>() where T : Entity;
         T GetById<T>(int id) where T : Entity;
+        IQueryable<T> Query<T>() where T : Entity;
     }
 }

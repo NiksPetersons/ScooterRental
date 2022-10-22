@@ -38,7 +38,11 @@ namespace ScooterRental.Web
 
             services.AddScoped<IScooterDbContext, ScooterDbContext>();
             services.AddScoped<IDbService, DbService>();
-            services.AddScoped<IScooterService, ScooterService>();
+            //services.AddScoped<IScooterService, ScooterService>();
+            services.AddScoped<IRentalService, RentalService>();
+            services.AddScoped<IRentalFeeCalculator, RentalFeeCalculator>();
+            services.AddScoped<IIncomeReportCalculator, IncomeReportCalculator>();
+            services.AddScoped<IIncomeReportService, IncomeReportService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
