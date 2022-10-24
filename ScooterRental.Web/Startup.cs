@@ -5,8 +5,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using ScooterRental.Core.Interfaces;
+using ScooterRental.Core.ScooterValidations;
 using ScooterRental.DB;
 using ScooterRental.Services;
+using ScooterRental.Web.AutoMapper;
 
 namespace ScooterRental.Web
 {
@@ -43,6 +45,10 @@ namespace ScooterRental.Web
             services.AddScoped<IRentalFeeCalculator, RentalFeeCalculator>();
             services.AddScoped<IIncomeReportCalculator, IncomeReportCalculator>();
             services.AddScoped<IIncomeReportService, IncomeReportService>();
+            services.AddSingleton(AutoMapperConfig.CreateMapper());
+            //validators
+            services.AddScoped<IScooterValidator, ScooterPriceValidator>();
+            services.AddScoped<IScooterValidator, ScooterIsRentedValidator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
