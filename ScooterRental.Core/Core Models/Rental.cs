@@ -17,18 +17,20 @@ namespace ScooterRental.Core
             RentEnd = null;
         }
 
-        //public Rental(decimal pricePerMinute, string scooterId, DateTime rentStart, DateTime rentEnd)
-        //{
-        //    PricePerMinute = pricePerMinute;
-        //    ScooterId = scooterId;
-        //    RentStart = rentStart;
-        //    RentEnd = rentEnd;
-        //}
+        public Rental(decimal pricePerMinute, int scooterId, DateTime rentStart)
+        {
+            PricePerMinute = pricePerMinute;
+            ScooterId = scooterId;
+            RentStart = rentStart;
+            RentEnd = null;
+        }
 
-        //public void ConcludeRent()
-        //{
-        //    RentEnd = DateTime.Now;
-        //    Scooter.IsRented = false;
-        //}
+        public Rental(decimal pricePerMinute, int scooterId, DateTime rentStart, DateTime rentEnd)
+        {
+            PricePerMinute = pricePerMinute;
+            ScooterId = scooterId;
+            RentStart = rentStart;
+            RentEnd = rentEnd;
+        }
     }
 }
