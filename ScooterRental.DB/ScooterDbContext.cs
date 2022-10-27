@@ -1,6 +1,6 @@
-﻿using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using ScooterRental.Core;
+﻿using Microsoft.EntityFrameworkCore;
+using ScooterRental.Core.Core_Models;
+using System.Threading.Tasks;
 
 namespace ScooterRental.DB
 {

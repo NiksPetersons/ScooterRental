@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using ScooterRental.Core;
+using ScooterRental.Core.Core_Models;
 using ScooterRental.Web.ViewModels;
 
 namespace ScooterRental.Web.AutoMapper
@@ -14,8 +14,6 @@ namespace ScooterRental.Web.AutoMapper
                     .ForMember(x => x.Id, opt => opt.Ignore());
                 x.CreateMap<Scooter, ScooterView>();
             });
-
-            config.AssertConfigurationIsValid();
 
             return config.CreateMapper();
         }

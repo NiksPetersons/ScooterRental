@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Microsoft.EntityFrameworkCore;
-using ScooterRental.Core;
+﻿using Microsoft.EntityFrameworkCore;
+using ScooterRental.Core.Core_Models;
 using ScooterRental.Core.Interfaces;
 using ScooterRental.DB;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ScooterRental.Services
 {

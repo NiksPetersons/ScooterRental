@@ -1,6 +1,6 @@
 ﻿using ScooterRental.Core.Interfaces;
 
-namespace ScooterRental.Core
+namespace ScooterRental.Core.Core_Models
 {
     public class Entity : IEntity
     {

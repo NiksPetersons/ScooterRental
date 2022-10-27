@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using ScooterRental.Core;
+using ScooterRental.Core.Core_Models;
 using ScooterRental.Core.Interfaces;
 using ScooterRental.Core.ScooterValidations;
 using ScooterRental.Web.ViewModels;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ScooterRental.Web.Controllers
 {

@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using ScooterRental.Core.CalculatorModels;
 using ScooterRental.Core.Interfaces;
 using ScooterRental.Core.ScooterValidations;
 using ScooterRental.DB;
@@ -40,11 +41,11 @@ namespace ScooterRental.Web
 
             services.AddScoped<IScooterDbContext, ScooterDbContext>();
             services.AddScoped<IDbService, DbService>();
-            //services.AddScoped<IScooterService, ScooterService>();
             services.AddScoped<IRentalService, RentalService>();
             services.AddScoped<IRentalFeeCalculator, RentalFeeCalculator>();
             services.AddScoped<IIncomeReportCalculator, IncomeReportCalculator>();
             services.AddScoped<IIncomeReportService, IncomeReportService>();
+            //mapper
             services.AddSingleton(AutoMapperConfig.CreateMapper());
             //validators
             services.AddScoped<IScooterValidator, ScooterPriceValidator>();

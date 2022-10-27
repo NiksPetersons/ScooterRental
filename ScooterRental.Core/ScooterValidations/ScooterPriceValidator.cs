@@ -1,4 +1,6 @@
-﻿namespace ScooterRental.Core.ScooterValidations
+﻿using ScooterRental.Core.Core_Models;
+
+namespace ScooterRental.Core.ScooterValidations
 {
     public class ScooterPriceValidator : IScooterValidator
     {

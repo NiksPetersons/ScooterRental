@@ -1,8 +1,8 @@
 ﻿using System;
-using ScooterRental.Core;
+using ScooterRental.Core.Core_Models;
 using ScooterRental.Core.Interfaces;
 
-namespace ScooterRental.Services
+namespace ScooterRental.Core.CalculatorModels
 {
     public class RentalFeeCalculator : IRentalFeeCalculator
     {

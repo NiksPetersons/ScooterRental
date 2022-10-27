@@ -1,4 +1,6 @@
-﻿namespace ScooterRental.Core.Interfaces
+﻿using ScooterRental.Core.Core_Models;
+
+namespace ScooterRental.Core.Interfaces
 {
     public interface IRentalFeeCalculator
     {

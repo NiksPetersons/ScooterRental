@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ScooterRental.Core
+namespace ScooterRental.Core.Core_Models
 {
     public class Rental : Entity
     {

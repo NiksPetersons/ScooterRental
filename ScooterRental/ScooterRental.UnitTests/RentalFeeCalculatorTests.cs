@@ -1,9 +1,9 @@
-﻿using System;
-using System.Globalization;
-using FluentAssertions;
-using ScooterRental.Core;
+﻿using FluentAssertions;
+using ScooterRental.Core.CalculatorModels;
+using ScooterRental.Core.Core_Models;
 using ScooterRental.Core.Interfaces;
-using ScooterRental.Services;
+using System;
+using System.Globalization;
 using Xunit;
 
 namespace ScooterRental.UnitTests

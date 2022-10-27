@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using FluentAssertions;
-using ScooterRental.Core;
+﻿using FluentAssertions;
+using ScooterRental.Core.Core_Models;
 using ScooterRental.Core.ScooterValidations;
 using Xunit;
 

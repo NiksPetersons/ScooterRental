@@ -1,5 +1,5 @@
 using FluentAssertions;
-using ScooterRental.Core;
+using ScooterRental.Core.Core_Models;
 using Xunit;
 
 namespace ScooterRental.UnitTests

@@ -1,6 +1,6 @@
-﻿using System;
-using FluentAssertions;
-using ScooterRental.Core;
+﻿using FluentAssertions;
+using ScooterRental.Core.Core_Models;
+using System;
 using Xunit;
 
 namespace ScooterRental.UnitTests

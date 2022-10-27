@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using ScooterRental.Core;
+﻿using ScooterRental.Core.Core_Models;
 using ScooterRental.Core.Interfaces;
+using System;
+using System.Linq;
 
 namespace ScooterRental.Services
 {
@@ -17,9 +16,8 @@ namespace ScooterRental.Services
             _calculator = calculator;
         }
 
-        public Rental StartRentById(int id)
+        public Rental StartRent(Scooter scooter)
         {
-            var scooter = _dbService.GetById<Scooter>(id);
             scooter.IsRented = true;
             _dbService.Update(scooter);
             var rental = new Rental(scooter.PricePerMinute, scooter.Id);

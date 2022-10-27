@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using FluentAssertions;
-using ScooterRental.Core;
+using ScooterRental.Core.Core_Models;
 using ScooterRental.Web.AutoMapper;
 using ScooterRental.Web.ViewModels;
 using Xunit;

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using ScooterRental.Core.Core_Models;
 
 namespace ScooterRental.Core.Interfaces
 {

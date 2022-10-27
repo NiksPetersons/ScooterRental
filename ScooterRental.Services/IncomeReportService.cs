@@ -1,4 +1,4 @@
-﻿using ScooterRental.Core;
+﻿using ScooterRental.Core.Core_Models;
 using ScooterRental.Core.Interfaces;
 
 namespace ScooterRental.Services
